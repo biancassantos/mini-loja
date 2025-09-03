@@ -1,0 +1,108 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-border-line);
+}
+
+.itemDetails {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: flex-end;
+  width: 90px;
+  height: 90px;
+  border-radius: 4px;
+  background-color: var(--color-accent);
+}
+
+.name {
+  font-weight: 500;
+}
+
+.unityPrice {
+  color: var(--color-text-dimmed);
+  font-size: .9rem;
+}
+
+.totalPrice {
+  color: var(--color-highlight-details);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quantityButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background-color: var(--color-main);
+  color: #FFFFFF;
+  font-weight: 500;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.quantityButton:hover:not(:active) {
+  background-color: transparent;
+  border-color: var(--color-highlight-details);
+  color: var(--color-highlight-details);
+}
+
+.quantityButton:active {
+  background-color: transparent;
+  color: var(--color-highlight-details);
+  scale: .9;
+}
+
+.remove {
+  align-self: flex-end;
+  font-size: 1.1rem;
+  padding: 5px;
+  border-radius: 4px;
+  color: var(--color-highlight-details);
+  cursor: pointer;
+  transition: .25s;
+}
+
+.remove:hover {
+  background-color: var(--color-bg);
+}
+
+
+@media screen and (max-width: 480px) {
+  .item {
+    flex-direction: column;
+  }
+
+  .itemDetails {
+    gap: 2rem;
+  }
+
+  .controlSection {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .remove {
+    align-self: auto;
+  }
+}

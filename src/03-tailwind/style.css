@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+  --breakpoint-sm: 480px;
+
+  --animate-shimmer: shimmer 1.2s infinite;
+
+  @keyframes shimmer {
+    100% { transform: translateX(100%); }
+  }
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Tema claro */
+:root {
+  --color-bg-header: #FFFFFF;
+  --color-bg: #F4F4F5;
+  --color-bg-card: #FFFFFF;
+  --color-bg-promo-badge: #FFA2A2;
+  --color-text: #000000;
+  --color-text-dimmed: #525252;
+  --color-text-accent: #F0FDF4;
+  --color-highlight-details: #006045;
+  --color-main: #006045;
+  --color-accent: #F0FDF4;
+  --color-star: #FFD230;
+  --color-skeleton: #e9e9ee;
+  --color-skeleton-highlight: #ffffffa6;
+  --color-border-line: #E4E4E7;
+  --shadow-card: 0 0 15px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* Tema escuro */
+[data-theme='dark'] {
+  --color-bg-header: #18181B;
+  --color-bg: #27272A;
+  --color-bg-card: #404040;
+  --color-bg-promo-badge: #FFA2A2;
+  --color-text: #FFFFFF;
+  --color-text-dimmed: #F4F4F5;
+  --color-text-accent: #F0FDF4;
+  --color-highlight-details: #F0FDF4;
+  --color-main: #006045;
+  --color-accent: #F0FDF4;
+  --color-star: #FFD230;
+  --color-skeleton: #1c1d24;
+  --color-skeleton-highlight: #2a2c34;
+  --color-border-line: #27272A;
+  --shadow-card: 0 0 15px 6px rgba(255, 255, 255, 0.06);
+}
+
+
+/* Preferência do usuário: aplica tema claro por mídia (fallback) */
+@media (prefers-color-scheme: dark) { /* Consulta de mídia */
+  :root:not([data-theme='dark']) { /* Se o usuário não setou explicitamente dark */
+    color-scheme: light; /* Informa ao navegador que estamos em esquema claro */
+  }
+}
+
+/* Usa color-scheme para integrar com UI nativa (inputs, etc) */
+:root, [data-theme='dark'] { /* Tanto no claro como no escuro */
+  color-scheme: light dark; /* Permite alternância de aparência nativa */
+}
