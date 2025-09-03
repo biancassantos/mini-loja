@@ -9,7 +9,11 @@ A aplicação também conta com:
 - Modo claro/escuro
 - Efeito de skeleton enquanto carrega os produtos
 
-💻 [Página do projeto](https://biancassantos.github.io/mini-loja)
+<br>
+
+💻 [Página do projeto](https://plantashop.vercel.app/)
+
+<br>
 
 ## Funcionalidades
 - Adicionar/remover itens do carrinho
