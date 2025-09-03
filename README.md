@@ -18,6 +18,7 @@ A aplicação também conta com:
 ## Funcionalidades
 - Adicionar/remover itens do carrinho
 - Aumentar/diminuir quantidade de itens no carrinho
+- Ordenar os produtos por ordem alfabética, menor valor e maior valor
 
 ## Dependências:
 - React Router
