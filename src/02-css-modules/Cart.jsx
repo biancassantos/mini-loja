@@ -60,6 +60,7 @@ function Cart() {
                     <div className={styles.inputContainer}>
                       <input type="text" id="coupon" className={styles.input} />
                       <button 
+                      onClick={e => e.preventDefault}
                       aria-label="Aplicar cupom de desconto" 
                       className={`${styles.button} ${styles.couponButton}`}
                       >
